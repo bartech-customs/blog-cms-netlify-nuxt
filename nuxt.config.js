@@ -1,18 +1,6 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-  generate: {
-    routes: function () {
-      const fs = require('fs')
-      const path = require('path')
-      return fs.readdirSync('./content/blog').map((file) => {
-        return {
-          route: `/blog/${path.parse(file).name}`, // Return the slug
-          payload: require(`./content/blog/${file}`),
-        }
-      })
-    },
-  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'blog-project',
