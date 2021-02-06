@@ -5,8 +5,8 @@ description: Blog Post One - DESCRIPTION
 ---
 ## Blog Post One - Body
 
-`<ul>`
+<ul>
 
-`<li>List Item</li>`
+<li>List Item</li>
 
-`</ul>`
+</ul>
